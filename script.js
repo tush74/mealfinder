@@ -2,7 +2,23 @@ const search = document.querySelector(".search");
 const workplace = document.querySelector(".workplace");
 const favButton = document.querySelector(".fav");
 let favorites = [];
-function changeColor() {
+function colormastercaller() {
+  const colors = [
+    "linear-gradient(to right, #FF0000, #0000FF)",
+    "linear-gradient(to bottom right, #FFA500, #008000)",
+    "linear-gradient(to right, #FF00FF, #FFFF00)",
+    "linear-gradient(to bottom right, #00FFFF, #800080)",
+    "linear-gradient(to right, #008080, #FF6347)",
+    "linear-gradient(to bottom right, #8A2BE2, #00FF7F)",
+    "linear-gradient(to right, #FFFFF0, #1E90FF)",
+    "linear-gradient(to bottom right, #7CFC00, #D2B48C)",
+    "linear-gradient(to right, #8B0000, #00CED1)",
+    "linear-gradient(to bottom right, #9932CC, #FFD700)",
+  ];
+
+  let colorIndex = 0;
+
+  function changeColor() {
     const obj = document.querySelector(".fav");
 
     obj.style.background = colors[colorIndex];
