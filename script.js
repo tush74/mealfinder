@@ -2,7 +2,27 @@ const search = document.querySelector(".search");
 const workplace = document.querySelector(".workplace");
 const favButton = document.querySelector(".fav");
 let favorites = [];
+function changeColor() {
+    const obj = document.querySelector(".fav");
 
+    obj.style.background = colors[colorIndex];
+
+    colorIndex = (colorIndex + 1) % colors.length;
+  }
+  const obj = document.querySelector(".fav");
+  obj.addEventListener("mouseover", changeColor);
+  obj.addEventListener("click", changeColor);
+
+  obj.addEventListener("mouseover", function () {
+    this.classList.add("zoomable");
+  });
+
+  obj.addEventListener("mouseout", function () {
+    this.classList.remove("zoomable");
+  });
+}
+
+colormastercaller();
 async function sbn(name) {
   let url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`;
   const res = await fetch(url);
