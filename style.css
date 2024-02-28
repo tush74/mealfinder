@@ -34,16 +34,15 @@
   margin: 0 0.5rem;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
-  background-color: rgb(198, 101, 49);
-  color: rgb(118, 176, 228);
-  transition: all 0.2s;
+}
+.zoomable {
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
-.btnn:hover {
-  background-color: rgb(93, 162, 222);
-  color: rgb(198, 101, 49);
+.zoomable:hover {
+    transform: scale(1.1); /* You can adjust the scale factor as per your preference */
 }
-
 .workplace {
   display: flex;
   flex-wrap: wrap;
