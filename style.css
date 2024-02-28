@@ -34,14 +34,14 @@
   margin: 0 0.5rem;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
-  background-color: black;
-  color: aliceblue;
+  background-color: rgb(198, 101, 49);
+  color: rgb(118, 176, 228);
   transition: all 0.2s;
 }
 
 .btnn:hover {
-  background-color: aliceblue;
-  color: black;
+  background-color: rgb(93, 162, 222);
+  color: rgb(198, 101, 49);
 }
 
 .workplace {
