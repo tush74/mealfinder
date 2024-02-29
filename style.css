@@ -89,7 +89,7 @@
   height: 100%;
   padding: 1rem;
   padding-left: 2rem;
-  background-color: rgba(252, 181, 50, 0.788);
+  /* background-color: rgba(252, 181, 50, 0.788); */
   color: rgb(0, 0, 0);
   transition: all 0.3s ease;
   overflow-y: auto;
