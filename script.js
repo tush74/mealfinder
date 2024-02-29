@@ -62,8 +62,12 @@ function addDetails(meal, structure) {
         <ul>
             ${getIngredients(meal).join("")}
         </ul>
+        <br>
+        <br>
         <p><strong>Instructions:</strong></p>
         <p>${meal.strInstructions}</p>
+        <br>
+        <br>
         <a href="${meal.strYoutube}" target="_blank">Watch on YouTube</a>
     `;
 
